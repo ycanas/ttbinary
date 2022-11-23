@@ -1,0 +1,27 @@
+a{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+b{
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 8px;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.973);
+}
+
+#divInput{
+    width: 500px;
+    margin-top: 135px;
+}
+
+button{
+    width: 500px;
+    margin-top: 10px;
+}
+
+#divOutput{
+    width: 500px;
+    margin-bottom: 135px;
+}
