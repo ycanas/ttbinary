@@ -13,26 +13,53 @@
     <title>TextToBinary</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="./index.html" style="margin-top: 15px; margin-left: 15px;">
             <img src="./img/icon.png" width=25 height=25>
-            <b>Conversión de texto a binario</b>
+            <b id="textNavBar">Traductor Binario Online</b>
         </a>
     </nav>
 
-    <!-- Input -->
+    <!-- Entrada -->
     <form>
         <div class="form-group mx-auto" id="divInput">
-            <input type="text" class="form-control" id="input" name="input" autocomplete="off" placeholder="Ingrese el texto">
-            <button type="button" class="btn btn-primary" id="button">Convertir a Binario</button>
+            <input type="text" class="form-control" id="inputText" name="input" autocomplete="off" placeholder="Ingrese el texto">
+            <button type="button" class="btn btn-primary" id="buttonBinary">Convertir a Binario</button>
+            <button type="button" class="btn btn-primary" id="buttonText">Convertir a Texto</button>
         </div>
     </form>
 
-    <!-- Output -->
+    <!-- Salida -->
     <div role="alert" id="divOutput" >
         <!-- JavaScript -->
     </div>
+
+    <!-- Información -->
+    <div class="mx-auto" id="divInformation">
+        <p>
+            <h5><b>Sistema binario</b></h5><br>
+            En el sistema binario sólo hay dos símbolos o posibles valores de dígitos: 0 y 1.
+            Aún así, este sistema de base 2 puede usarse para representar cualquier cantidad
+            que pueda representarse en decimal o en otros sistemas numéricos.<br><br><br>
+            <h5><b>¿Cómo convertir texto a binario?</b></h5><br>
+            <ol>
+                <li>Obtener el carácter o texto</li>
+                <li>Buscar el código ASCII del carácter (decimal)</li>
+                <li>Convertir el código decimal en binario</li>
+            </ol>
+
+        </p>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <div class="container">
+          <span class="text-muted">Creado por: Yair Cañas | Creditos: 
+            <a href="https://www.flaticon.es/iconos-gratis/binario" title="binario iconos">Flaticon</a>
+          </span>
+        </div>
+    </footer>
 
     <!-- Script -->
     <script src="./main.js"></script>
