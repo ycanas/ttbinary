@@ -2,23 +2,19 @@
 
 Este es un conversor de texto a binario creado con HTML, CSS, Bootstrap y JavaScript. Convierte el texto ingresado en una cadena de ceros y unos que representan la versión en binario del texto.
 
-<br>
-
 ## Tecnologias Utilizadas
 1. HTML
 2. CSS
 3. Bootstrap
 4. JavaScript
 
-<br>
-
 ## Caracteristicas
 * Convierte texto a binario y viceversa.
 * Fácil de usar e intuitivo.
 
-<br>
-
 ## Enlace a la pagina del conversor [👉](https://ycanas.github.io/ttbinary/)
+
+<br>
 
 ![GitHub Top Languages](https://img.shields.io/github/languages/count/ycanas/ttbinary?style=for-the-badge&labelColor=101010&color=e50000)
 ![GitHub Top Language](https://img.shields.io/github/languages/top/ycanas/ttbinary?color=f6e300&style=for-the-badge&labelColor=101010)
