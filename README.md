@@ -12,9 +12,7 @@ Este es un conversor de texto a binario creado con HTML, CSS, Bootstrap y JavaSc
 * Convierte texto a binario y viceversa.
 * Fácil de usar e intuitivo.
 
-## Enlace a la pagina del conversor [👉](https://ycanas.github.io/ttbinary/)
-
-<br>
+## Enlace a la pagina del conversor [:arrow_right:](https://ycanas.github.io/ttbinary/)
 
 ![GitHub Top Languages](https://img.shields.io/github/languages/count/ycanas/ttbinary?style=for-the-badge&labelColor=101010&color=e50000)
 ![GitHub Top Language](https://img.shields.io/github/languages/top/ycanas/ttbinary?color=f6e300&style=for-the-badge&labelColor=101010)
