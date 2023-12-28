@@ -2,65 +2,94 @@
 <html lang="es">
 <head style="min-height: 100%;">
     <meta charset="UTF-8">
-    <meta name="application-name" content="TextToBinary">
+    <meta name="application-name" content="Traductor Binario">
     <meta name="author" content="Yair Cañas">
     <meta name="description" content="Conversión de texto a binario online">
     <meta name="keywords" content="texto, binario, online">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- estilos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./styles.css">
     <link rel="icon" type="image/png" href="./img/favicon.png">
-    <title>TextToBinary</title>
+    <title>Traducto Binario</title>
 </head>
 <body>
-    <!-- Barra de navegación -->
+    <!-- barra de navegación -->
     <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="./index.html" style="margin-top: 15px; margin-left: 15px;">
-            <img src="./img/icon.png" width=25 height=25>
-            <b id="textNavBar">Traductor Binario Online</b>
+        <a class="navbar-brand my-3 mx-3" href="./index.html"> 
+            <img src="./img/icon.png" width=32 height=32>
+            <p class="d-inline align-middle"> <b>Traducto Binario</b> </p>
         </a>
     </nav>
 
-    <!-- Entrada -->
+    <!-- entrada -->
     <form>
-        <div class="form-group mx-auto" id="divInput">
+        <div class="form-group mx-auto w-50 mt-5">
             <input type="text" class="form-control" id="inputText" name="input" autocomplete="off" placeholder="Ingrese el texto">
-            <button type="button" class="btn btn-primary" id="buttonBinary">Convertir a Binario</button>
-            <button type="button" class="btn btn-primary" id="buttonText">Convertir a Texto</button>
+            <button type="button" class="btn btn-dark w-100 mt-2" id="buttonBinary">Traducir a Binario</button>
+            <button type="button" class="btn btn-dark w-100 mt-2" id="buttonText">Traducir a Texto</button>
         </div>
     </form>
 
-    <!-- Salida -->
-    <div role="alert" id="divOutput" >
+    <!-- salida -->
+    <div role="alert" id="divOutput">
         <!-- JavaScript -->
     </div>
 
-    <!-- Información -->
-    <div class="mx-auto" id="divInformation">
+    <!-- infromación -->
+    <div class="px-5 pt-5 mt-5" style="font-size: 18px;">
         <p>
-            <h5><b>Sistema binario</b></h5><br>
-            En el sistema binario sólo hay dos símbolos o posibles valores de dígitos: 0 y 1.
-            Aún así, este sistema de base 2 puede usarse para representar cualquier cantidad
+            <h5> <b>Sistema binario</b> </h5><br>
+            En el sistema binario sólo hay dos símbolos o posibles valores de dígitos: <kbd>0</kbd> y <kbd>1</kbd>.
+            Aún así, este sistema de base <kbd>2</kbd> puede usarse para representar cualquier cantidad
             que pueda representarse en decimal o en otros sistemas numéricos.<br><br><br>
-            <h5><b>¿Cómo convertir texto a binario?</b></h5><br>
+            
+            <h5> <b>¿Cómo convertir un número a binario? </b></h5><br>
+            Convertir un número decimal a binario implica dividir sucesivamente el número por <kbd>2</kbd>,
+            registrando los residuos de cada división de abajo hacia arriba. Al llegar a un cociente de 0,
+            los residuos leídos en orden inverso representan el número en su forma binaria.
+        </p> <br>
+
+        <div class="container w-50">
+            <p class="alert alert-dark text-center">
+                Ejemplo: Convertir a binario el número <kbd>13</kbd><br> <br>
+                13 ÷ 2 = 6, residuo <kbd>1</kbd> <br>
+                06 ÷ 2 = 3, residuo <kbd>0</kbd> <br>
+                03 ÷ 2 = 1, residuo <kbd>1</kbd> <br>
+                01 ÷ 2 = 0, residuo <kbd>1</kbd> <br> <br>
+                Resultado: <kbd>1101</kbd>
+            </p><br>
+        </div>
+
+        <p>
+            <h5> <b>¿Cómo convertir texto a binario? </b></h5><br>
+            El proceso de convertir texto a binario se basa en la representación de
+            caracteres usando códigos numéricos. Se emplea un estándar como <kbd>ASCII</kbd>
+            o <kbd>Unicode</kbd>, donde cada carácter tiene un valor numérico asignado. Luego, estos 
+            valores se convierten a su equivalente en binario. <br> <br>
+
+            <h5>Ejemplo: </h5> <br>
+
             <ol>
-                <li>Obtener el carácter o texto</li>
-                <li>Buscar el código ASCII del carácter (decimal)</li>
-                <li>Convertir el código decimal en binario</li>
+                <li>Obtener el caracter o texto → <kbd>A</kbd></li>
+                <li>Buscar el código ASCCI del caracter → <kbd>65</kbd></li>
+                <li>Convertir el código (decimal) a binario → <kbd>1000001</kbd></li>
             </ol>
         </p>
     </div>
 
-    <!-- Pie de pagina -->
-    <footer class="footer">
-        <div class="container">
-          <span class="text-muted">Creado por: Yair Cañas | Creditos: 
+    <!-- pie de pagina -->
+    <footer class="footer w-100 mt-5 pt-3 mb-4 ">
+        <div class="d-flex flex-row-reverse mx-5">
+          <span class="text-muted">Creado por: 
+            <a href="https://github.com/ycanas" class="text-reset font-weight-bold"> Yair Cañas</a> | Imagenes: 
             <a href="https://www.flaticon.es/iconos-gratis/binario" title="binario iconos">Flaticon</a>
           </span>
         </div>
     </footer>
 
-    <!-- Script -->
+    <!-- script -->
     <script src="./main.js"></script>
 </body>
 </html>
