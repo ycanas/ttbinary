@@ -1,6 +1,6 @@
-<h1 align="center">Conversor de Texto a Binario Online</h1>
+<h1 align="center">Traductor de Texto a Binario Online</h1>
 
-Este es un conversor de texto a binario creado con HTML, CSS, Bootstrap y JavaScript. Convierte el texto ingresado en una cadena de ceros y unos que representan la versión en binario del texto.
+Este es un traducto de texto a binario y viceverse creado con HTML, CSS, Bootstrap y JavaScript. Convierte el texto ingresado en una cadena de ceros y unos que representan la versión en binario del texto.
 
 ## Tecnologias Utilizadas
 1. HTML
