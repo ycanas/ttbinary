@@ -19,7 +19,7 @@ buttonBinary.onclick = function(){
     }
 
     document.getElementById('inputText').value = "";
-    divOutput.className = "w-50 mt-1 alert alert-success mx-auto";
+    divOutput.className = "w-75 mt-1 alert alert-success mx-auto";
     divOutput.innerHTML = `${output.trim()}`;
 }
 
