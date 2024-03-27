@@ -1,3 +1,7 @@
+import "./bootstrap.min.js"
+
+const toast = document.getElementById('toast');
+const bootstrapToast = bootstrap.Toast.getOrCreateInstance(toast);
 const buttonBinary = document.getElementById('buttonBinary');
 const buttonText = document.getElementById('buttonText');
 
@@ -21,6 +25,8 @@ buttonBinary.onclick = function() {
     document.getElementById('inputText').value = "";
     divOutput.className = "w-75 mt-1 alert alert-success mx-auto";
     divOutput.innerHTML = `${output.trim()}`;
+    navigator.clipboard.writeText(output.trim());
+    bootstrapToast.show();
 }
 
 
@@ -56,4 +62,6 @@ buttonText.onclick = function() {
     document.getElementById('inputText').value = "";
     divOutput.className = "w-75 mt-1 alert alert-success mx-auto";
     divOutput.innerHTML = `${output.trim()}`;
+    navigator.clipboard.writeText(output.trim());
+    bootstrapToast.show();
 }
