@@ -1,9 +1,18 @@
-body{
-    font-family: 'monospace';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Roboto Mono", monospace;
     
     background: radial-gradient(
         circle at 18.7% 37.8%,
         rgb(250, 250, 250) 0%,
         rgb(225, 234, 238) 90%
     );
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
 }
